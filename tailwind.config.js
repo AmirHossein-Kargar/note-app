@@ -7,8 +7,9 @@ export default {
         roboto: "Roboto",
       },
       colors: {
-        'main-color': "#222831",
-        'text-color': "#EEEEEE"
+        "main-color": "#222831",
+        "text-color": "#EEEEEE",
+        // "secondary-color": "#406882",
       },
     },
   },

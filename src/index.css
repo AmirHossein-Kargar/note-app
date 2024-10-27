@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-    font-family: 'Roboto', sans-serif;
-    @apply bg-main-color;
-    @apply text-text-color
+  font-family: "Roboto", sans-serif;
+  @apply bg-main-color;
+  @apply text-text-color;
 }
