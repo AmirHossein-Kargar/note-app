@@ -1,10 +1,24 @@
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from "react";
+
 import NoteHeader from "./NoteHeader";
-import NoteApp from "./NoteApp";
+import AddNewNote from "./AddNewNote";
+import NoteList from "./NoteList";
 function App() {
+  // eslint-disable-next-line no-undef, no-unused-vars
+  const [notes, setNotes] = useState([]);
+
+  const handleAddNotes = (newNote) => {
+    setNotes((prevNotes) => [...prevNotes, newNote]);
+  };
+
   return (
     <div className="container mx-auto max-w-screen-xl my-8">
       <NoteHeader />
-      <NoteApp />
+      <div className="note-app flex justify-between gap-8">
+        <AddNewNote onAddNote={handleAddNotes} />
+        <NoteList notes={notes} />
+      </div>
     </div>
   );
 }
