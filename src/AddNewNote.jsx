@@ -25,8 +25,8 @@ function AddNewNote({ onAddNote }) {
   };
 
   return (
-    <div className="add-new-note w-4/12 text-center">
-      <h2 className="mb-10 text-2xl font-bold tracking-wide">Add New Note</h2>
+    <div className="add-new-note w-1/3 text-center cursor-default select-none">
+      <h2 className="mb-10 text-2xl font-bold tracking-wide whitespace-nowrap">Add New Note</h2>
       <form action="" className="gap-6 grid" onSubmit={handleSubmit}>
         <input
           value={title}

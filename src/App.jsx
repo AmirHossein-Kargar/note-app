@@ -13,9 +13,9 @@ function App() {
   };
 
   return (
-    <div className="container mx-auto max-w-screen-xl my-8">
+    <div className="container mx-auto max-w-screen-xl my-8 p-4">
       <NoteHeader />
-      <div className="note-app flex justify-between gap-8">
+      <div className="note-app flex flex-col gap-32 justify-center items-center sm:flex-row">
         <AddNewNote onAddNote={handleAddNotes} />
         <NoteList notes={notes} />
       </div>

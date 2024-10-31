@@ -8,7 +8,10 @@ export default {
       },
       colors: {
         "main-color": "#222831",
-        "text-color": "#EEEEEE",
+        "text-color": "#F5F5F7",
+        "text-700": "#374151",
+        "text-400": "#94a3b8",
+        "text-300": " #cbd5e1",
         // "secondary-color": "#406882",
       },
     },
