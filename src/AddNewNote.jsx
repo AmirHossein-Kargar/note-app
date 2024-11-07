@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 // eslint-disable-next-line react/prop-types
 function AddNewNote({ onAddNote }) {
   const [title, setTitle] = useState("");
@@ -25,7 +24,7 @@ function AddNewNote({ onAddNote }) {
   };
 
   return (
-    <div className="add-new-note w-1/3 text-center cursor-default select-none">
+    <div className="add-new-note w-1/3 text-center cursor-default select-none min-h-screen justify-center items-center">
       <h2 className="mb-10 text-2xl font-bold tracking-wide whitespace-nowrap">Add New Note</h2>
       <form action="" className="gap-6 grid" onSubmit={handleSubmit}>
         <input
@@ -44,7 +43,7 @@ function AddNewNote({ onAddNote }) {
         />
         <button
           type="submit"
-          className="bg-blue-800 hover:bg-transparent hover:border hover:border-text-color transition duration-200 ease-in text-text-color font-semibold p-3 rounded-lg"
+          className="bg-blue-700 hover:bg-transparent hover:border hover:border-text-color transition duration-200 ease-in text-text-color font-semibold p-3 rounded-lg"
         >
           Click to Add
         </button>
